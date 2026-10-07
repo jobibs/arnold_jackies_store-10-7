@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f6f8;
+    margin: 0;
+    color: #222;
+}
+
+.wrap {
+    max-width: 1250px;
+    margin: 25px auto;
+    padding: 0 18px;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+.muted {
+    color: #777;
+}
+
+.actions {
+    margin: 20px 0;
+}
+
+.actions a {
+    display: inline-block;
+    padding: 9px 13px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    text-decoration: none;
+    color: #222;
+    margin-right: 7px;
+}
+
+.actions a:hover {
+    background: #f0f0f0;
+}
+
+.box {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 15px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+th {
+    background: #f8f8f8;
+}
+
+input,
+select,
+textarea,
+button {
+    padding: 9px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.empty {
+    color: #777;
+    text-align: center;
+    padding: 20px;
+}
+
+/* REPORT SUMMARY CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 17px;
+}
+
+.card-title {
+    color: #777;
+    font-size: 14px;
+}
+
+.value {
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* DASHBOARD */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.label {
+    color: #777;
+    font-size: 14px;
+}
+
+.section {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 15px 0;
+}
+
+@media (max-width: 950px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.action-button {
+    display: inline-block;
+    padding: 9px 13px;
+    background: #222;
+    border: 1px solid #222;
+    border-radius: 7px;
+    text-decoration: none;
+    color: white;
+}
+
+.action-button:hover {
+    background: #444;
+    color: white;
+}
